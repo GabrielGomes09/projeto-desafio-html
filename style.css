@@ -4,7 +4,7 @@
   border: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -15,6 +15,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .left-area {
@@ -27,16 +28,53 @@ body {
 .left {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: Center;
   justify-content: center;
   height: 100vh;
-  width: 100vh;
+  width: 500px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.left h1 {
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 20px;
+  margin-left: -140px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: left;
+  gap: 25px;
   width: 70%;
+}
+
+.form input {
+  color: #000000;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form input::placeholder {
+  color: #000000;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #0056fb;
+  box-shadow: 0 0 5px rgba(0, 86, 251, 0.5);
+}
+
+.right-area {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0056fb;
 }
